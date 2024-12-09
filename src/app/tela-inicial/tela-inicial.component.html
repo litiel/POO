@@ -1,63 +1,68 @@
-<div id="tela2">
-    <div class="header-container">
-        <div class="menu-icon">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
+<div id="tela2" style="font-family: Arial, sans-serif; background-color: #f5f5f5; padding: 20px;">
+    <!-- Header -->
+    <div class="header-container" style="display: flex; align-items: center; justify-content: space-between; background-color: #004aad; color: white; padding: 10px 20px; border-radius: 8px;">
+        <div class="menu-icon" style="display: flex; flex-direction: column; gap: 4px; cursor: pointer;">
+            <div class="line" style="width: 25px; height: 3px; background-color: white; border-radius: 2px;"></div>
+            <div class="line" style="width: 25px; height: 3px; background-color: white; border-radius: 2px;"></div>
+            <div class="line" style="width: 25px; height: 3px; background-color: white; border-radius: 2px;"></div>
         </div>
-        <img src="siperdi.png" alt="Sicredi" class="logo">
-        <div class="notificacao">
+        <img src="bancointernacional.png" alt="Sicredi" class="logo" style="height: 40px;">
+        <div class="notificacao" style="cursor: pointer; font-size: 20px;">
             <span class="bell">&#128276;</span>
         </div>
     </div>
-    <div class="usuario">
-        <span class="nome">Olá, LITIÉL</span>
-        <span class="user-welcome"><br>Bem-vindo ao Sicredi</span>
+
+    <!-- User Info -->
+    <div class="usuario" style="text-align: center; margin: 20px 0;">
+        <span class="nome" style="font-size: 18px; font-weight: bold; color: #004aad;">Olá, LITIÉL</span>
+        <br>
+        <span class="user-welcome" style="font-size: 16px; color: #555;">Bem-vindo ao LPG Bank</span>
     </div>
 
-    <div class="opcoes">
-        <div class="option-card">
-            <img src="saldo.png" alt="Saldo" class="option-icon">
-            <span class="option-label">Saldo</span>
+    <!-- Options Section -->
+    <div class="opcoes" style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; margin-bottom: 20px;">
+        <div class="option-card" style="background-color: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center; cursor: pointer;">
+            <img src="saldo.png" alt="Saldo" class="option-icon" style="width: 50px; margin-bottom: 10px;">
+            <span class="option-label" style="font-size: 14px; color: #555;">Saldo</span>
         </div>
-        <div class="option-card">
-            <img src="cartoes.png" alt="Cartões" class="option-icon">
-            <span class="option-label">Cartões</span>
+        <div class="option-card" style="background-color: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center; cursor: pointer;">
+            <img src="cartoes.png" alt="Cartões" class="option-icon" style="width: 50px; margin-bottom: 10px;">
+            <span class="option-label" style="font-size: 14px; color: #555;">Cartões</span>
         </div>
-        <div class="option-card">
-            <img src="investimentos.png" alt="Investimentos" class="option-icon">
-            <span class="option-label">Investimentos</span>
+        <div class="option-card" style="background-color: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center; cursor: pointer;">
+            <img src="investimentos.png" alt="Investimentos" class="option-icon" style="width: 50px; margin-bottom: 10px;">
+            <span class="option-label" style="font-size: 14px; color: #555;">Investimentos</span>
         </div>
-        <div class="option-card">
-            <img src="credito.png" alt="Crédito" class="option-icon">
-            <span class="option-label">Crédito</span>
+        <div class="option-card" style="background-color: white; border-radius: 8px; padding: 15px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); text-align: center; cursor: pointer;">
+            <img src="credito.png" alt="Crédito" class="option-icon" style="width: 50px; margin-bottom: 10px;">
+            <span class="option-label" style="font-size: 14px; color: #555;">Crédito</span>
         </div>
     </div>
 
-    <div class="acoes">
-        <h2>Eu quero...</h2>
-        <ul>
-            <li><a href="#">
-                <img src="pix.png" alt="Pix" class="pix-icon">
-                <button class="fazerumpix" (click)="fazerumpix()">Fazer um Pix</button>
-            </a></li>
-            <li><a href="#">
-                <img src="conta.png" alt="Pagar Conta" class="pix-icon">
-                <button class="receberumpix" (click)="receberumpix()"> Pagar uma conta</button>
-            </a></li>
+    <!-- Actions Section -->
+    <div class="acoes" style="background-color: white; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+        <h2 style="font-size: 18px; color: #004aad; margin-bottom: 15px;">Eu quero...</h2>
+        <ul style="list-style: none; padding: 0;">
+            <li style="display: flex; align-items: center; margin-bottom: 10px;">
+                <img src="pix.png" alt="Pix" class="pix-icon" style="width: 40px; margin-right: 10px;">
+                <button class="fazerumpix" (click)="fazerumpix()" style="background-color: #004aad; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Fazer um Pix</button>
+            </li>
+            <li style="display: flex; align-items: center;">
+                <img src="conta.png" alt="Pagar Conta" class="pix-icon" style="width: 40px; margin-right: 10px;">
+                <button class="receberumpix" (click)="receberumpix()" style="background-color: #004aad; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Pagar uma conta</button>
+            </li>
         </ul>
     </div>
 
-    <div class="botaocdb">
-        <li><a href="#">
-            <img src="investimentos.png" alt="Investimentos" class="pix-icon">
-            <button class="Investimentos" (click)="simularCdb()">Simular CDB</button>
-        </a></li>
+    <!-- Additional Actions -->
+    <div class="botaocdb" style="margin-bottom: 20px;">
+        <li style="display: flex; align-items: center; margin-bottom: 10px;">
+            <img src="investimentos.png" alt="Investimentos" class="pix-icon" style="width: 40px; margin-right: 10px;">
+            <button class="Investimentos" (click)="simularCdb()" style="background-color: #004aad; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Simular CDB</button>
+        </li>
+        <li style="display: flex; align-items: center;">
+            <img src="financiamento.png" alt="Financiamento" class="pix-icon" style="width: 40px; margin-right: 10px;">
+            <button class="simulacao" (click)="navegarParaSimulador()" style="background-color: #004aad; color: white; border: none; border-radius: 5px; padding: 10px 20px; cursor: pointer;">Simular Financiamento</button>
+        </li>
     </div>
-
-    <div class="botaosimulacao">
-
-        <button class="simulacao"(click)="navegarParaSimulador()"> Simular Financiamento</button>
-    
-    </div>
-    
+</div>
