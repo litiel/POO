@@ -1,24 +1,35 @@
-<div id="telaPix">
-    <h2>Transações Pix</h2>
-    <div class="opcoes-pix">
+<body>
+    <header class="cabecalho">
+      <img src="bancointernacional.png" alt="International Bank" class="logo" style="height: 100px; margin-right: 20px;">
+      <h1 class="cabecalho__conteudo">Transações Pix</h1>
+    </header>
+  
+    <div id="telaPix" class="opcoes-container">
+      <h2>Selecione uma Opção</h2>
+      <div class="opcoes-pix">
+        <!-- Enviar Pix -->
         <div class="option-card" onclick="enviarPix()">
-            <div class="option-icon">
-                <img src="enviopix.png" alt="Enviar Pix" class="icon">
-            </div>
-            <div class="option-label">Enviar Pix</div>
+          <div class="option-icon">
+            <img src="enviopix.png" alt="Enviar Pix" class="icon">
+          </div>
+          <div class="option-label">Enviar Pix</div>
         </div>
-
+  
+        <!-- Receber Pix -->
         <div class="option-card" onclick="receberPix()">
-            <div class="option-icon">
-                <img src="recebopix.png" alt="Receber Pix" class="icon">
-            </div>
-            <div class="option-label">Receber Pix</div>
+          <div class="option-icon">
+            <img src="recebopix.png" alt="Receber Pix" class="icon">
+          </div>
+          <div class="option-label">Receber Pix</div>
         </div>
-    </div>
-
-    <div id="tela-pix-opcoes" style="display: none;">
-        <h2 class="subtitulo"></h2>
+      </div>
+  
+      <!-- Opções de envio ou recebimento -->
+      <div id="tela-pix-opcoes" class="opcoes-detalhes" style="display: none;">
+        <h2 class="subtitulo">Detalhes da Transação</h2>
         <div class="pix-content"></div>
         <button class="btn-voltar" onclick="voltarTelaPix()">Voltar</button>
+      </div>
     </div>
-</div>
+  </body>
+  

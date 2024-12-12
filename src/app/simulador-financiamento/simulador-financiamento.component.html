@@ -1,5 +1,13 @@
-<div class="container">
-    <h1>Simulador de Financiamento</h1>
+<body>
+  <div class="cabecalho">
+    <!-- Logo do banco International Bank -->
+    <img src="bancointernacional.png" alt="International Bank" class="logo" style="height: 100px; margin-right: 20px;">
+    <div class="cabecalho__conteudo">Simulador de Financiamento</div>
+  </div>
+
+  <div class="container">
+    <h2>Simulação de Financiamento</h2>
+    
     <form (ngSubmit)="calcularPrestacao()" #financiamentoForm="ngForm">
       <div class="form-group">
         <label for="valorFinanciado">Valor Financiado</label>
@@ -29,5 +37,8 @@
     <div class="resultado" *ngIf="prestacao !== null">
       <p>Prestação Mensal Estimada: <strong>R$ {{ prestacao | number: '1.2-2' }}</strong></p>
     </div>
+
+    <!-- Botão para voltar -->
+    <button class="btn-voltar">Voltar</button>
   </div>
-  
+</body>

@@ -1,0 +1,50 @@
+<div id="tela-cartoes">
+    <!-- Header -->
+    <div class="header-container">
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <img src="bancointernacional.png" alt="Logo" class="logo">
+        <div class="notificacao">
+            <span class="bell">&#128276;</span>
+        </div>
+    </div>
+
+    <!-- User Info -->
+    <div class="usuario">
+        <span class="nome">Olá, LITIÉL</span>
+        <br>
+        <span class="user-welcome">Bem-vindo ao LPG Bank</span>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="opcoes">
+        <div class="option-card" (click)="visualizarCartao('credito')">
+            <img src="cartao-credito.jpg" alt="Cartão de Crédito" class="option-icon">
+            <span class="option-label">Cartão de Crédito</span>
+        </div>
+        <div class="option-card" (click)="visualizarCartao('debito')">
+            <img src="cartao-credito.jpg" alt="Cartão de Débito" class="option-icon">
+            <span class="option-label">Cartão de Débito</span>
+        </div>
+        <div class="option-card" (click)="visualizarCartao('virtual')">
+            <img src="cartao-credito.jpg" alt="Cartão Virtual" class="option-icon">
+            <span class="option-label">Cartão Virtual</span>
+        </div>
+    </div>
+
+    <!-- Actions Section -->
+    <div class="acoes">
+        <h2>Eu quero...</h2>
+        <ul>
+            <li>
+                <button class="novoCartao" (click)="solicitarCartao()">Solicitar um Cartão</button>
+            </li>
+            <li>
+                <button class="bloquearCartao" (click)="bloquearCartao()">Bloquear Cartão</button>
+            </li>
+        </ul>
+    </div>
+</div>

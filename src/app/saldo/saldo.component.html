@@ -1,0 +1,61 @@
+<div id="tela-saldo">
+    <!-- Header -->
+    <div class="header-container">
+        <div class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </div>
+        <img src="bancointernacional.png" alt="Logo" class="logo">
+        <div class="notificacao">
+            <span class="bell">&#128276;</span>
+        </div>
+    </div>
+
+    <!-- User Info -->
+    <div class="usuario">
+        <span class="nome">Olá, LITIÉL</span>
+        <br>
+        <span class="user-welcome">Bem-vindo ao LPG Bank</span>
+    </div>
+
+    <!-- Saldo Section -->
+    <div class="saldo-info">
+        <h2 style="font-size: 22px; color: #004aad; text-align: center;">Saldo Disponível</h2>
+        <div class="saldo">
+            <span class="saldo-valor" style="font-size: 36px; font-weight: bold; color: #004aad;">R$ 10.000,00</span>
+        </div>
+    </div>
+
+    <!-- Cards Section -->
+    <div class="opcoes">
+        <div class="option-card" (click)="visualizarSaldo('corrente')">
+            <img src="conta-corrente.png" alt="Conta Corrente" class="option-icon">
+            <span class="option-label">Conta Corrente</span>
+        </div>
+        <div class="option-card" (click)="visualizarSaldo('poupanca')">
+            <img src="conta-corrente.png" alt="Conta Poupança" class="option-icon">
+            <span class="option-label">Conta Poupança</span>
+        </div>
+        <div class="option-card" (click)="visualizarSaldo('investimentos')">
+            <img src="conta-corrente.png" alt="Investimentos" class="option-icon">
+            <span class="option-label">Investimentos</span>
+        </div>
+    </div>
+
+    <!-- Actions Section -->
+    <div class="acoes">
+        <h2>Eu quero...</h2>
+        <ul>
+            <li>
+                <button class="fazerTransferencia" (click)="fazerTransferencia()">Fazer Transferência</button>
+            </li>
+            <li>
+                <button class="depositar" (click)="depositar()">Depositar</button>
+            </li>
+            <li>
+                <button class="consultarExtrato" (click)="consultarExtrato()">Consultar Extrato</button>
+            </li>
+        </ul>
+    </div>
+</div>

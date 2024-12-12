@@ -11,6 +11,10 @@ import { Router } from '@angular/router';
 export class TelaInicialComponent {
   constructor(private router: Router) {}
 
+  public navegarParaCartoes() {
+    this.router.navigate(['/cartoes']);
+  }
+ 
   public fazerumpix() {
     this.router.navigate(['/tela-pix']);
   }
